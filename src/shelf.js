@@ -9,7 +9,6 @@ function shelfBook (book, shelf) {
 function unshelfBook(book, shelf) {
   for(var i=0; i<shelf.length; i++) {
     if(shelf[i].title===book) {
-      console.log("condition met");
       shelf.splice(i,1);
     }
   }
