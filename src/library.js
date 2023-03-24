@@ -10,15 +10,15 @@ function createLibrary(inputName) {
 
 function addBook(library, book) {
   var bookGenre = book.genre;
-  library.shelves[bookGenre].push(book);
+  library["shelves"][bookGenre].push(book);
   return library;
 }
 
 function checkoutBook(library, bookTitle, bookGenre) {
   var bookExists = false;
   for(var i=0; i<library.shelves[bookGenre].length; i++) {
-    if(library.shelves[bookGenre][i].title===bookTitle) 
-    library.shelves[bookGenre].splice(i,1);
+    if(library["shelves"][bookGenre][i].title===bookTitle) 
+    library["shelves"][bookGenre].splice(i,1);
     bookExists = true;
   } 
  if(bookExists === true) {
