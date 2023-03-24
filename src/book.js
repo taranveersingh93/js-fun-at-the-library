@@ -14,7 +14,6 @@ function saveReview(input, inputArray) {
   if(inputArray.includes(input)===false) {
     inputArray.push(input);
   }
-  return inputArray;
 }
 
 function calculatePageCount(bookTitle) {
